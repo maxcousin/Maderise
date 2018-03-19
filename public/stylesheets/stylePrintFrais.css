@@ -1,0 +1,85 @@
+#imgLogo{
+	width: 100px;
+}
+
+.tab{
+	width: 100%;
+	margin: 10px;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.infoTxt{
+	font-family: Arial,Helvetica,sans-serif;
+	border-style: solid;
+	border-width: 1px;
+	text-align: left;
+	vertical-align: top;
+	background-color: #FFF;
+	font-size: 10pt;
+	width: 20%;
+}
+
+.title{
+	background-color: #808080;
+	font-weight: bold;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 2px;
+	font-size: 14pt;
+}
+
+.tr-frais{
+	height: 22px;
+}
+
+.tr-vide{
+	height: 8px;
+}
+
+td{
+	vertical-align: middle;
+}
+
+.tab-frais tr td, .tab-frais tr th{
+	border: 1px solid gray;
+	padding: 5px;
+	font-size: 8pt;
+	font-family: Arial,Helvetica,sans-serif;
+	vertical-align: middle;
+}
+
+.tab-frais tr th{
+	border: 3px solid gray;
+	font-weight: bold;
+}
+
+.tab-frais{
+	width: 99%;
+	margin: 0 auto;
+}
+
+.total-note{
+	font-family: Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	border-style: solid;
+	border-width: 3px;
+	text-align: center;
+	background-color: #FFF;
+	font-size: 14pt;
+	width: 10cm;
+	margin-top: 30px;
+	margin-left: 50%;
+}
+
+.date-lbl, .nom-lbl{
+	font-weight: bold;
+}
+
+.date-lbl, .nom-lbl, .lbl-visa{
+	margin-left: 5px;
+}
+
+.lbl-visa{
+	margin-top: 2px;
+}

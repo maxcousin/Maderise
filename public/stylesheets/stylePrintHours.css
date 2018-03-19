@@ -1,0 +1,48 @@
+#imgLogo, #global #logo{
+	width: 120px;
+}
+
+#global #logo{
+	float:left;
+	margin: 10px;
+}
+
+#global #title{
+	margin-left: 140px;
+	text-align: center;
+	font-size: 30px;
+	padding-top: 20px;
+}
+
+tbody, #informations{
+	font-weight: bold;
+}
+
+#informations{
+	margin-top: 100px;
+	margin-left: 10px;
+}
+
+#table{
+	width: 99%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+#table, td{
+	border: 1px solid black;
+}
+
+td{
+	padding: 5px;
+}
+
+#Sign{
+	float:right;
+	margin: 25px;
+}
+
+.class-gray{
+	background-color: darkgray;
+}
+

@@ -1,0 +1,972 @@
+.ng-knob {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.ng-knob .ng-knob-tick {
+    width: 2px;
+    height: 35%;
+    background: black;
+    margin: 0 auto;
+}
+
+.navbar-inverse .navbar-nav > li > a, .tab-add-task tr th, .btn-indianred, .btn-indianred:hover, .archive.table-recap tr th, .table-details-aff tr th, .table-materiel tr th, .table-type-tache tr th, #tabs li a, .title-menu, .txt-white, .txt-max, .table-entete-clients-th, #nameUserProfil, .table-clients tbody tr:hover{
+	color: white;
+}
+
+#logoSociety{
+	width: 50px;
+	margin-right: 20px;
+}
+
+#profil, #logoSociety{
+	margin-top: 1.2%;
+}
+
+.title-menu{
+	height: 50px;
+	padding-left: 0px;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+#titre-ca, .title-menu{
+	padding: 15px;
+}
+
+#logoSociety, .title-menu, #domaine-ca{
+	float: left;
+}
+
+.navbar{
+	border-radius: 0px;
+}
+
+.container > .navbar-header{
+	margin-left: 2%;
+	margin-right: 10%;
+}
+
+#tabs, .table-generate-ca{
+	margin-top: 50px;
+}
+
+.txt-black{
+	color: black;
+}
+
+#tabs li.active, .txt-red{
+	color: red;
+}
+
+.container-tab-recap{
+	float: right;
+}
+
+.container-tab-recap, .container-add-task, #societe-filter, #duree-filter, #value-progress-bar, .container-new-affaire, .container-type-tache, .container-clients, .container, .container-loading, .filter-analyse-aff-tab, #tabs{
+	width: 100%;
+}
+
+.loading-bar{
+	width: 50px;
+}
+
+.progress-bar-red{
+	background-color: indianred;
+}
+.list-button-aff, .table-new-affaire, .fiche-employe{
+	width: 45%;
+	margin: 0 auto;
+}
+
+.table-recap{
+	width: 100%;
+}
+
+.table-details-aff{
+	width: 45%;
+}
+
+.table-details-aff-result{
+	width: 30%;
+}
+
+.table-recap tr td, .table-details-aff tr td{
+	padding: 8px;
+}
+
+.accueil .table-recap tr td:nth-child(1):hover, .accueil .table-recap tr td:nth-child(2):hover, .accueil .table-recap tr td:nth-child(3):hover, .accueil .table-recap tr td:nth-child(4):hover{
+	background-color: indianred;
+}
+
+.accueil .table-recap tr th{
+	padding: 15px;
+}
+
+
+#container-progress-bar, #lbl-new-affaire, .table-new-client tr td:first-child, .table-analyse-aff th{
+	vertical-align: middle;
+}
+
+#container-progress-bar{
+	width: 90%;
+	border: 1px solid #cec7c7;
+	height: 20px;
+	position: relative;
+}
+
+.table-recap, #titre-ca, .fiche-employe, .tab-add-new-model, .table-details-aff, .tab-popup-add-task, .btn-retour-add-task, .tab-add-task, .container-recap, #tabs, #container-progress-bar, .table-entete-clients, .table-clients, .table-analyse-aff, .table-generate-ca, .table-new-type, .table-type-tache, .table-new-affaire, .table-materiel, .table-new-client{
+	margin: 0 auto;
+}
+
+
+#value-progress-bar{
+	position: absolute;
+    display: block;
+}
+
+.txt-max{
+	background-color: #C9302C;
+}
+
+.lbl-aff-title {
+	margin-left: 25%;
+}
+
+.lbl-aff-subtitle{
+	margin-top: 40px;
+	margin-left: 27%;
+}
+
+.container-type-tache, .container-clients, .container-tab-recap{
+	padding-bottom: 50px;
+}
+
+.table-entete-clients, legend.field-border, .table-new-type{
+	margin-top: 20px;
+}
+
+.table-entete-clients-th, .table-type-tache th, .table-details-aff th, .table-materiel th, .table-clients th, .table-analyse-aff th, .table-generate-ca th, .active-entete, #tabs .active{
+    font-weight: bold;
+}
+
+.table-entete-clients-th, .table-recap th, .tab-add-task th, .tab-add-task tr td, .table-details-aff th, .table-details-aff tr td, .table-clients th, .table-generate-ca th, .table-materiel th, .table-type-tache th, .active-entete{
+	padding: 8px;
+}
+
+.table-entete-clients th:hover, .table-clients tbody tr:hover{
+	cursor: pointer;
+}
+
+.table-clients, .table-entete-clients, .table-new-client, .tab-add-task, .tab-add-new-model .form-control {
+	width: 80%;
+}
+
+.table-analyse-aff{
+	width: 90%;
+}
+
+.table-generate-ca, .container-recap, .tab-add-new-model{
+	width: 65%;
+}
+
+.table-clients, .table-generate-ca, .table-entete-clients, .table-new-type, .table-type-tache, .table-materiel, .table-analyse-aff{
+	border: 1px solid #CDC3B7;
+}
+
+.result-details{
+	font-size: 56px;
+	color: teal;
+}
+
+.table-clients tr td, .table-analyse-aff tr td, .tab-add-new-model tr td, .tab-add-task th, .container-add-task, .table-result-details tr td, .table-details-aff tr td, .table-details-aff th, .container-loading, .table-materiel th, .active-entete, #btn-generer-ca, #title-page, #btn-add-new-affaire, .table-new-affaire tr th, .table-materiel tr td, .table-entete-clients-th, .table-recap th, .table-clients th, .table-generate-ca th, .table-new-type tr td, .table-type-tache tr td, .table-type-tache th{
+	text-align: center;
+}
+
+.table-clients tr td, .table-analyse-aff tr td, .table-generate-ca tr td, .table-type-tache tr td, .table-materiel tr td{
+    padding: 10px;
+}
+
+.table-generate-ca{
+	margin-bottom: 50px;
+}
+
+.table-new-type, .table-type-tache, .table-new-affaire tr td:first-child{
+	width: 40%;
+}
+
+.table-new-type tr td, #domaine-ca, #duree-ca, #societe-ca, #societe-filter, .table-analyse-aff th, #societe-filter, #duree-filter{
+	padding: 5px;
+}
+
+.glyphicon{
+	padding-right: 5px;
+}
+
+.table-type-tache, .table-materiel{
+	margin-top: 40px;
+}
+
+.table-type-tache tr td, .table-entete-clients-th, .tab-add-task tr td,  .tab-add-task th, .table-details-aff th, .table-details-aff tr td, .table-clients th, .table-analyse-aff th, .table-generate-ca th, .table-recap tr td, .container-recap, .table-type-tache th, .table-clients tr td, .table-generate-ca tr td, .active-entete, .table-materiel tr td, .table-materiel th{
+	border: 1px solid #DDD;
+}
+
+.btn-retour-add-task button:hover{
+	color: white;
+	background-color: teal;
+	border-color: teal;
+}
+
+.btn-teal{
+	background-color: teal;
+	color: white;
+}
+
+.btn-teal:hover{
+	color: white;
+}
+
+.heure-details{
+	font-size: 18px;
+}
+
+.panel-aff{
+	width: 100%;
+	background-color: indianred;
+	color: white;
+	margin: 0 auto;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+.panel-aff span{
+	margin-right: 20px;
+}
+
+.table-result-details tr td.filled-details{
+	background-color: #f1f1f1;
+	border-bottom: 20px solid teal;
+	padding: 60px;
+}
+
+.btn-retour-add-task{
+	margin-bottom: 50px;
+}
+
+.table-result-details.ng-scope{
+	margin-bottom: 100px;
+}
+
+.table-recap th{
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+}
+
+.table-type-tache th, .table-materiel th, .active-entete{
+    border-top: 0px none;
+}
+
+.table-materiel, .table-new-affaire tr td:last-child, #saisie-text, #select-one-month{
+	width: 60%;
+}
+
+.table-materiel th, .table-type-tache th, .active-entete, .table-entete-clients-th, .table-recap th, .table-details-aff th, .table-clients th, .table-generate-ca th{
+	border-bottom-width: 2px;
+}
+
+.table-analyse-aff th{
+	border-bottom-width: 1px;
+}
+
+.table-materiel th, .table-type-tache th, .active-entete, .table-entete-clients-th, .table-recap th, .table-details-aff th, .table-clients th, .table-generate-ca th{
+	vertical-align: bottom;
+}
+
+.table-new-client tr td:first-child{
+	width: 10%;
+}
+
+.table-new-client tr td:last-child{
+	width: 30%;
+}
+
+.table-new-client tr td:last-child, .table-new-affaire tr td:last-child, #input-lbl, #materiel-libelle{
+	text-align: left;
+}
+
+.table-new-affaire tr td, .table-new-client tr td, .table-recap tr td img{
+	padding: 3px;
+}
+
+.table-new-affaire tr td:first-child, #lbl-code, .table-new-client tr td:first-child{
+	text-align: right;
+}
+
+#saisie-text{
+	display: inline-flex;
+}
+
+#lbl-new-affaire, .table-details-aff th{
+	font-size: 16px;
+}
+
+#line-border{
+	border-top: 2px solid #f1f1f1;
+	height: 1px;
+	margin: 5px;
+}
+
+#btn-add, #domaine-ca{
+	margin-left: 10%;
+}
+
+#td-archive{
+	margin-left: 8%;
+}
+
+.archive{
+	width: 95%;
+	margin-top: 20px;
+}
+
+.archive tr th{
+	padding: 15px;
+}
+
+.archive tr td{
+	padding: 8px;
+}
+
+#profil{
+    float:right;
+    margin-right: 10px;
+}
+
+#imgUserEmpty{
+    width: 25px;
+    margin-top: -5px;
+}
+
+.container-recap{
+	padding: 30px;
+	padding-bottom: 0px;
+}
+
+#titre-ca{
+	width: 95%;
+}
+
+#domaine-ca, #duree-ca, #societe-ca{
+	width: 38%;
+}
+
+#duree-ca, #societe-ca{
+	margin-left: 52%;
+}
+.num-task{
+	width: 15%;
+	margin-left: 2px;
+}
+
+#societe-filter, #duree-filter, .tab-popup-add-task tr td{
+	padding: 5px;
+}
+
+#societe-ca, #societe-filter{
+	margin-top: -2%;
+}
+
+#btn-generer-ca{
+	margin-bottom: 10px;
+}
+
+#select-society{
+	width: 70%;
+}
+
+#select-one-year{
+	width: 55%;
+}
+
+#input-title{
+	width: 89%;
+}
+
+#btn-radio{
+	margin-left: 4px;
+}
+
+
+fieldset.field-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.field-border {
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    width:auto;
+    padding:0 10px;
+    border-bottom:none;
+}
+
+.txt-green{
+	color: green;
+}
+
+/*****************/
+/*** CHECK BOX ***/
+/*****************/
+.checkbox label:after,
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+
+.btn-allyears.checkbox label, .btn-allyears.radio label{
+	padding-left:5px;
+}
+
+.form-group input[type="checkbox"] {
+    display: none;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span {
+    width: 20px;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span:first-child {
+    display: none;
+}
+.form-group input[type="checkbox"] + .btn-group > label span:last-child {
+    display: inline-block;
+}
+
+.form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
+    display: inline-block;
+}
+.form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
+    display: none;
+}
+
+
+/****************/
+/*** TIMELINE ***/
+/****************/
+
+div#timeline {
+  height: 10px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+  .dot {
+    z-index: 99;
+    transition : 0.3s ease-in-out;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dot-nav{
+	z-index: 99;
+    transition : 0.3s ease-in-out;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#timeline .dot-nav span{
+	display: inline-block;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid indianred;
+    margin-bottom: 50px;
+    font-size: 24px;
+    padding-top: 9px;
+    color: indianred;
+}
+
+#timeline .dot-nav span:hover{
+	background-color: indianred;
+	border: 2px solid indianred;
+	color: #fff;
+}
+
+
+#timeline .dot span {
+display: inline-block;
+margin-top: 10px;
+width: 20px;
+height: 20px;
+background-color: #fff;
+position: relative;
+border-radius: 50%;
+border: 2px solid indianred;
+margin-bottom: 30px;
+}
+
+#timeline .dot date{
+color: indianred;
+}
+
+#timeline .dot span.select, .table-entete-clients-th, .btn-indianred, .tab-add-task thead, .container-new-affaire, .archive thead, #timeline .dot span:hover, .table-type-tache thead, .table-details-aff thead, .table-materiel thead{
+	background-color: indianred;
+}
+
+.timelineTable, .table-result-details{
+width: 60%;
+margin: 0 auto;
+}
+
+.yearTimeline, .btn-allyears{
+	width: 60%;
+	margin-left: 20%;
+	text-align: center;
+	font-size: 30px;
+	color: indianred;
+}
+
+.btn-allyears{
+	float: right;
+	margin-bottom: 50px;
+}
+
+.btn-allyears .btn-primary{
+	background-color: indianred;
+	border-color: indianred;
+}
+
+.filling-line{
+	position: absolute;
+z-index: 1;
+left: 25%;
+top: 0;
+width: 48%;
+height: 2px;
+background-color: indianred;
+position: absolute;
+top: 19px;
+}
+
+.tabAnalyseAffaire{
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+	width: 95%;
+}
+
+.table-analyse-aff tr td{
+	border: 1px solid #ddd;
+	min-width: 90px;
+}
+
+.table-analyse-aff thead{
+	background-color: indianred;
+	color: white;
+}
+
+.table-analyse-aff th{
+	font-size: 12px;
+}
+
+.filter-analyse-aff-tab tr td{
+	width: 33%;
+}
+
+.filter-analyse-aff-tab tr:nth-child(2) td{
+	/*background-color: #c1c1c1;*/
+	padding: 10px;
+	/*color: white;*/
+	text-align: center;
+	border: 1px solid #c1c1c1;
+}
+
+.filter-analyse-aff-tab tr:nth-child(2) td:hover{
+	background-color: indianred;
+	cursor: pointer;
+	color: white;
+	border: 1px solid indianred;
+}
+
+.filter-active {
+	background-color: indianred;
+	cursor: pointer;
+	color: white;
+	border: 1px solid indianred;
+}
+
+.container-recap .timelineTable, .btn-retour-add-task, .tab-popup-add-task{
+	width: 80%;
+}
+
+.container-recap .filling-line{
+	left: 18%;
+	width: 63%;
+}
+
+#tabs{
+	background-color: indianred;
+	padding-top: 5px;
+}
+
+#tabs .active a, .active-entete, .lbl-add-task, .lbl-title-recap, #title-page, .accueil.container-tab-recap .table-recap tr th, .title-new-affaire, #societe-filter legend, .lbl-aff-title, .btn-allyears .btn-default.active, .modal-title{
+	color: indianred;
+}
+
+.lbl-add-task{
+	font-size: 42px;
+}
+
+.onglet-a{
+	margin-left: 5px;
+}
+
+.navbar{
+	margin-bottom: 0px;
+}
+
+.navbar-inverse{
+	background-color: teal;
+	border: 0px;
+}
+
+.container{
+	margin-top: 10px;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus {
+	background-color: cadetblue;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+	background-color: cadetblue;
+}
+
+
+.table-striped>tbody>tr:nth-of-type(odd){
+	background-color: ghostwhite;
+}
+
+.active-entete, .table-new-affaire, .fiche-employe{
+    background-color: white;
+}
+
+.btn-secondary {
+    color: #292b2c;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn-group-affaire button{
+	font-size: 16px;
+	background-color: #f1f1f1;
+	color: black;
+}
+
+.btn-group-affaire button:hover{
+	background-color: teal;
+	color: white;
+}
+
+.btn-group-sous-affaire{
+	margin-bottom: 50px;
+}
+
+.btn-group-sous-affaire button:hover{
+	background-color: indianred;
+	color: white;
+}
+
+.btn-group-lg>.btn{
+	font-size: 13px;
+}
+
+.switch.checked{
+	background: indianred;
+	border-color: indianred;
+}
+
+.switch{
+	width: 40px;
+	height: 20px;
+}
+
+.switch small{
+	width: 20px;
+	height: 20px;
+}
+
+.div-margin-bot{
+	height: 50px;
+	background-color: indianred;
+}
+
+.div-margin-top{
+	height: 10px;
+	background-color: indianred;
+}
+
+.table-new-affaire, .fiche-employe{
+	border-radius: 20px;
+}
+.lbl-add-model, .num-task-model{
+	display: flex;
+	background-color: white;
+}
+
+.lbl-add-model{
+	width: 95%;
+}
+
+.num-task-model{
+	background-color: indianred;
+	height: 40px;
+	width: 25%;
+	margin-left: 5%;
+}
+
+.lbl-add-model span#a{
+	padding-top: 15px;
+	margin: 0 auto;
+	color: indianred;
+	max-width: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.lbl-task-model-num{
+	color: white;
+	font-size: 24px;
+	padding-top: 7px;
+	margin: 0 auto;
+}
+
+.tab-add-new-model tbody{
+	background-color: #f1f1f1;
+}
+
+.tab-add-new-model{
+	margin-top: 20px;
+}
+
+.tab-add-new-model tr td:nth-child(2) .lbl-add-model:nth-child(1){
+	margin-top: 10px;
+}
+
+.title-new-model{
+	background-color: indianred;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.title-new-model{
+	color: white;
+	font-size: 26px;
+}
+
+.tab-add-new-model table.b tbody{
+	background-color: white;
+}
+
+.tab-add-new-model table.b tbody tr td{
+	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.tab-add-new-model button{
+	margin: 30px;
+}
+
+.tab-add-new-model table.b label{
+	margin-bottom: 0px;
+}
+
+.tab-add-new-model table.b{
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.tab-add-new-model table.c th{
+	color: white;
+	background-color: indianred;
+	border: 1px solid #DDD;
+	padding: 5px;
+	text-align: center;
+}
+
+.entete-gst-modele{
+	width: 65%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.entete-gst-modele select.form-control{
+	width: 50%;
+}
+
+
+.codeAffaire:hover{
+	cursor: pointer;
+	color: indianred;
+}
+
+.table-clients tbody tr:hover{
+    background: #c3c3c3;
+}
+
+.progress-bar-blue{
+	background-color: cornflowerblue;
+}
+
+.fiche-employe{
+	display: grid;
+	padding-bottom: 50px;
+}
+
+.fiche-employe div .col-perso div{
+	padding-top: 15px;
+}
+.fiche-employe div .col-perso div, .fiche-employe div .col-perso input, .fiche-employe div .col-perso select{
+	margin-bottom: 5px;
+}
+
+.fiche-employe div .col-perso div{
+	margin-bottom: 7px;
+}
+
+.listEmploye tbody tr:hover{
+	background: antiquewhite;
+	cursor: pointer;
+}
+
+#table-heures tbody, #informations{
+	font-weight: bold;
+}
+
+#informations{
+	margin-top: 100px;
+	margin-left: 10px;
+}
+
+#table-heures{
+	width: 99%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+#table-heures td{
+	border: 1px solid black;
+	padding: 5px;
+}
+
+#Sign{
+	float:right;
+	margin: 25px;
+}
+
+.class-gray{
+	background-color: darkgray;
+}
+
+.tableHeurePersoA:hover{
+	cursor: pointer;
+}
+
+.facture-stock thead th{
+	font-weight: 700;
+}
+
+.facture-stock{
+	width: 95%
+}
+
+.employeHover:hover{
+	cursor: pointer;
+	background-color: ghostwhite;
+}
+
+.employeHover{
+	background-color: red;
+}
+
+.saisie{
+    color: red;
+}

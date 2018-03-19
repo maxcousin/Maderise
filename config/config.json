@@ -1,0 +1,9 @@
+{
+  "test": {
+    "username": "root",
+    "password": "",
+    "database": "postulant",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}

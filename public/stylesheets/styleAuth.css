@@ -1,0 +1,126 @@
+body {
+    color: #888;
+    background-image: url('../images/1.jpg');
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+img { max-width: 100%; }
+
+/*******************************/
+/******** Media queries ********/
+/*******************************/
+@media (max-width: 767px) {
+	.inner-bg { padding: 60px 0 110px 0; }
+}
+
+@media (max-width: 415px) {
+	h1, h2 { font-size: 32px; }
+}
+
+/**********************************/
+/*********** Formulaire ***********/
+/**********************************/
+.form-top {
+	overflow: hidden;
+	padding: 0 25px 15px 25px;
+	background: #fff;
+	-moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
+}
+
+.form-top-left {
+	padding-top: 25px;
+}
+
+.form-bottom {
+	padding: 25px 25px 30px 25px;
+	background: #eee;
+	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
+}
+
+.form-bottom form textarea {
+	height: 100px;
+}
+
+.form-bottom form button.btn {
+	width: 100%;
+}
+
+.form-box {
+	margin-top: 35px;
+}
+
+/************************/
+/******** Div ***********/
+/************************/
+.inner-bg {
+    padding: 100px 0 170px 0;
+}
+
+/************************/
+/******** Texte *********/
+/************************/
+strong { font-weight: 500; }
+
+a, a:hover, a:focus {
+	color: #4aaf51;
+	text-decoration: none;
+	-o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+ 
+h1, h2 {
+	margin-top: 10px;
+	font-size: 38px;
+    font-weight: 100;
+    line-height: 50px;
+}
+
+h3, h1, h2{
+	color: #555;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+#msg-error{
+	color: red; 
+	font-size: 14px;
+}
+
+/************************/
+/******** Button ********/
+/************************/
+button.btn {
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle; 
+    border: 0;
+    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+    line-height: 50px;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+button.btn, button.btn:hover, button.btn:active, button.btn:focus, button.btn:active:focus, button.btn.active:focus{
+	color: #fff;
+}
+
+button.btn:active, button.btn { 
+	-moz-box-shadow: none; 
+	-webkit-box-shadow: none; 
+	box-shadow: none; 
+}
+
+button.btn:active, button.btn:focus, button.btn:active:focus, button.btn.active:focus{
+	outline: 0; 
+}
+
+button.btn:active, button.btn:focus, button.btn:active:focus, button.btn.active:focus, button.btn:hover{
+	opacity: 0.6;
+}
+
+button.btn:focus, button.btn:active:focus, button.btn.active:focus, button.btn{
+	background: #4aaf51;
+}
+

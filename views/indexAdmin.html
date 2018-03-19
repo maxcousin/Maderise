@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html ng-app="postulant" ng-controller="indexAdminController">
+	<head>
+		<title>Gestion des Postulants</title>
+
+		<!-- Feuille de style -->
+		<link rel="stylesheet" href="/stylesheets/reset.css">
+	    <link rel="stylesheet" href="/stylesheets/bootstrap/bootstrap.min.css">
+	    <link rel="stylesheet" href="/stylesheets/bootstrap/bootstrap-datepicker3.css">
+	    <link rel="stylesheet" type="text/css" href="/stylesheets/ngDialog.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="/stylesheets/angular-ui-switch.min.css"/>
+	    <link rel="stylesheet" href="/stylesheets/style.css">
+	    <link rel="stylesheet" href="/stylesheets/styleAdmin.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/angular-ui.min.css"/>
+	</head>
+<body>
+
+<button ng-click="addPostulant()">Nouveau</button>
+<table>
+	<!-- Filtres de recherche -->
+	<tr>
+		<form>
+		    <td><input ng-model="search.nom" placeholder="Nom..."></td>
+			<td><input ng-model="search.prenom" placeholder="Prenom..."></td>
+			<td><input ng-model="search.ville" placeholder="Ville..."></td>
+			<!--<td><select ng-model="search.vivier"
+	          ng-options="vivier for vivier in viviers | filter:bool">
+		  </select></td>-->
+			<td><select ng-model="search.vivier">
+				<option value="">Tous</option>
+				<option value=true>Oui</option>
+				<option value=false>Non</option>
+	  		</select></td>
+		</form>
+	</tr>
+	<!-- En-tête -->
+	<tr>
+        <td> Nom </td>
+		<td> Prenom </td>
+		<td> Ville </td>
+		<td> Tel1 </td>
+		<td> Tel2 </td>
+		<td> Mail </td>
+		<td> CV </td>
+		<td> Vivier </td>
+    </tr>
+	<!-- Liste des postulants -->
+	<tr ng-repeat="postulant in listPostulant | filter:search:strict">
+		<td ng-click="updatePostulant(postulant.code_p)"> {{postulant.code_p}} - {{postulant.nom}} </td>
+		<td> {{postulant.prenom}} </td>
+		<td> {{postulant.ville}} </td>
+		<td> {{postulant.tel1}} </td>
+		<td> {{postulant.tel2}} </td>
+		<td> {{postulant.email}} </td>
+		<td> {{postulant.cv}} </td>
+		<td> {{postulant.vivier | bool}} </td>
+	</tr>
+</table>
+
+		<!-- Javascripts -->
+		<script src="/javascripts/lib/angular/angular.min.js"></script>
+		<script src="/javascripts/lib/angular/angular-ui.min.js"></script>
+		<script src="/javascripts/lib/angular/angular-route.min.js"></script>
+		<script src="/javascripts/lib/angular/ng-file-upload-shim.min.js"></script>
+		<script src="/javascripts/lib/angular/ng-file-upload.min.js"></script>
+		<script src="/javascripts/lib/angular/angular-ui-switch.min.js"></script>
+	    <script src="/javascripts/lib/jquery/jquery-1.11.1.min.js"></script>
+	    <script src="/javascripts/lib/bootstrap/bootstrap.min.js"></script>
+	    <script src="/javascripts/lib/bootstrap/ui-bootstrap.min.js"></script>
+	    <script src="/javascripts/lib/bootstrap/ui-bootstrap-tpls.min.js"></script>
+	    <script src="/javascripts/lib/bootstrap/bootstrap-datepicker.min.js"></script>
+	    <script src="/javascripts/lib/ng-dialog/ngDialog.min.js"></script>
+	    <script src="/javascripts/lib/angular/angular-cookies.min.js"></script>
+	    <script src="/javascripts/lib/angular/angular-md5.min.js"></script>
+	    <script src="/javascripts/lib/moment/moment.min.js"></script>
+	    <script type="text/javascript" src="/javascripts/lib/helium.js"></script>
+	    <script src="http://cdn.jsdelivr.net/alasql/0.3/alasql.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.7.12/xlsx.core.min.js"></script>
+		<script src="/javascripts/app.js"></script>
+		<script src="/javascripts/service/service.js"></script>
+		<script src="/javascripts/service/factory.js"></script>
+		<script src="/javascripts/service/filter.js"></script>
+		<script src="/javascripts/controllers/admin/accueilController.js"></script>
+		<script src="/javascripts/controllers/admin/ficheNewPostulantController.js"></script>
+		<script src="/javascripts/controllers/admin/ficheUpdatePostulantController.js"></script>
+		<script src="/javascripts/controllers/indexAdminController.js"></script>
+	</body>
+</html>

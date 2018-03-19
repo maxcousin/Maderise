@@ -1,0 +1,46 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install' ]
+2 info using npm@3.6.0
+3 info using node@v5.6.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly loadAllDepsIntoIdealTree Finishing
+20 silly idealTree:prePrune angular@1.5.0
+21 silly loadIdealTree Finishing
+22 silly currentTree angular@1.5.0
+23 silly idealTree angular@1.5.0
+24 silly generateActionsToTake Starting
+25 silly install generateActionsToTake
+26 verbose stack TypeError: Cannot read property 'target' of null
+26 verbose stack     at module.exports (/usr/lib/node_modules/npm/lib/install/filter-invalid-actions.js:24:35)
+26 verbose stack     at Array.<anonymous> (/usr/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+26 verbose stack     at LOOP (/usr/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+26 verbose stack     at /usr/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+26 verbose stack     at Object.Installer.computeLinked (/usr/lib/node_modules/npm/lib/install.js:411:41)
+26 verbose stack     at Array.<anonymous> (/usr/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+26 verbose stack     at LOOP (/usr/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+26 verbose stack     at /usr/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+26 verbose stack     at module.exports (/usr/lib/node_modules/npm/lib/install/diff-trees.js:50:3)
+26 verbose stack     at Array.<anonymous> (/usr/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+27 verbose cwd /home/nicolas/Bureau/MVC/angular
+28 error Linux 3.2.0-4-686-pae
+29 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install"
+30 error node v5.6.0
+31 error npm  v3.6.0
+32 error Cannot read property 'target' of null
+33 error If you need help, you may report this error at:
+33 error     <https://github.com/npm/npm/issues>
+34 verbose exit [ 1, true ]

@@ -1,0 +1,866 @@
+
+/*#target{
+    display: none;
+    margin: 5px;
+}*/
+
+/*#table-conges{
+    margin-top: 80px;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}*/
+
+/*#logInfo{
+    margin: 15px;
+}
+
+#userLog{
+    margin: 10px;
+}
+
+#mdpLabel{
+    text-align: right;
+}
+
+#mdpLabel, #select-date, #gauche-profil, #mdpInput{
+    width: 20%;
+}
+
+.titleMdp{
+    margin-bottom: 50px;
+}
+
+.titleMdp, #input-btn-mdp, #input-btn{
+    font-size: 16pt;
+}
+
+#input-btn-mdp{
+    padding-left: 10px;
+}
+
+#input-btn, #input-btn-mdp{
+    height: 40px;
+}
+
+#name-month a:hover{
+    text-decoration: none;
+}
+
+#name-month a, .jour-actu, #mdpLabel, #input-btn, .titleMdp, .jaune, #lbl-conges{
+    font-weight: bold;
+}
+
+#tabconges th,
+.conges,
+#conges-pris,
+#conges-a-approuver,
+#conges-en-attente,
+#conges-valides,
+#conges-action,
+{
+    color:white;
+}
+
+.caret:hover,
+#calendar,
+#table-pointage,
+#coutLabelCommentaire,
+.container-mdp,
+#contenuPopupCout,
+.td-photo-profil{
+    text-align: center;
+}
+
+#input-calendar{
+    width: 180px;
+}
+
+#select-date{
+    width: 80px;
+}*/
+
+/****************************************************************/
+/****************************************************************/
+/********************** NEW STYLE *******************************/
+/****************************************************************/
+/****************************************************************/
+
+
+/*****/
+
+.container-add-task{
+    text-align: center;
+    width: 100%;
+}
+
+.panel-aff{
+    width: 100%;
+    background-color: indianred;
+    color: white;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.panel-aff span{
+    margin-right: 20px;
+}
+
+.ngdialog-content{
+    background:none;
+}
+
+#templateId{
+    opacity: 0.6;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a, #name-month a {
+  color: black;
+}
+
+.navbar{
+    border-radius: 0px;
+}
+
+/**************************/
+/******** Tableau *********/
+/**************************/
+
+/*/ Planning des congés /*/
+
+#tabconges{
+    padding-bottom: 50px;
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 60%;
+}
+
+.table-wrapper {
+    overflow-x:scroll;
+    overflow-y:visible;
+    width:85%;
+    margin-left: 15%;
+}
+
+#colUser{
+    border: 0px;
+}
+
+#colMonth1, #colMonth2{
+    width: 40%;
+}
+
+#planningConges tr td{
+    padding: 6px;
+}
+
+#planningConges tr td, #tabconges tr td{
+    font-size: 8pt;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+#tabconges tr td{
+    padding: 2px;
+}
+
+#planningConges th,
+#planningConges tr td,
+#tabconges tr td,
+#tabconges th{
+    border: 1px solid #ddd;
+}
+
+#planningConges{
+    width: 3000px;
+    table-layout: fixed;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+#remove-margin{
+    margin-top: -22px;
+}
+
+/*/ Calendrier /*/
+#table-calendar{
+    margin-left: 20px;
+    width: 90%;
+}
+
+#table-calendar tbody tr td{
+    box-sizing: border-box;
+    padding: 10px 0px;
+    width: 100px;
+    border: 1px solid #CDC3B7;
+}
+
+#table-calendar thead tr th,
+#tabconges th,
+#tabconges tr td,
+#table-calendar tbody tr td,
+#planningConges th,
+.table-frais tr td,
+.table-frais th,
+.table-liste-conge tr td,
+.table-liste-conge th,
+#planningConges tr td{
+    text-align: center;
+}
+
+/*/ Tableau de pointage situé sous le calendrier /*/
+
+.table tbody tr:hover td:not(.numSem){
+    background: antiquewhite;
+}
+
+#planningConges th, #tabconges th{
+    color:grey;
+    font-weight: 700;
+}
+
+.table tbody tr:hover td:not(.numSem){
+    cursor: pointer;
+}
+
+
+/*/ Table de "Note de frais" /*/
+.table-frais{
+    width: 80%;
+}
+
+.table-frais tr td{
+    padding: 10px;
+}
+
+.table-frais tr td, .table-frais th{
+    border: 1px solid #DDD;
+}
+
+.table-frais th{
+    vertical-align: bottom;
+    border-bottom-width: 2px;
+    background-color: lavender;
+    padding: 8px;
+}
+
+/*/ Table de liste de congés à prendre /*/
+.table-liste-conge{
+    width: 60%;
+}
+
+.table-liste-conge tr td, .table-liste-conge th{
+    border: 1px solid #DDD;
+}
+
+.table-liste-conge th{
+    vertical-align: bottom;
+    border-bottom-width: 2px;
+    padding: 8px;
+}
+
+.table-liste-conge tr td, #id-cout{
+    padding: 10px;
+}
+
+.table-frais, .table-liste-conge, .table-profil{
+    margin: 0 auto;
+}
+
+/*/ Table Profil /*/
+.table-profil{
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    border-radius: 4px, 4px, 4px, 4px;
+    border-width: 1px;
+    border-color: #DDD;
+    width: 40%;
+    border-style: solid;
+}
+
+/***************************/
+/*********** Div ***********/
+/***************************/
+
+#rect-center{
+    margin: 0 auto;
+}
+
+.headCol {
+    left: 5px;
+    width: 14.4%;
+    height: 31px;
+    position: absolute;
+}
+
+#id-remove{
+    padding: 10px;
+}
+
+#calendar-legende{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#name-month{
+    margin-left: 20px;
+    width: 90%;
+}
+
+#legende{
+    width: 100%;
+}
+
+#legende-pointage{
+    margin-left: 26%;
+    margin-top: 15px;
+}
+
+#legende-pointage, #gauche, #logoSociety, .title-menu, #legende-conges{
+    float: left;
+}
+
+#pointage-10h, #pointage-partiel, #pointage-complet, #jour-ferier-leg{
+    border-radius: 2px;
+    font-size: 10pt;
+    padding: 4px;
+    margin: 2px;
+}
+
+#pointage-10h{
+    background-color: mediumseagreen;
+}
+
+#pointage-partiel{
+    background-color: #C9302C;
+}
+
+#pointage-complet{
+    background-color: cornflowerblue;
+}
+
+#jour-ferier-leg{
+    background-color: #F0AD4E;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+#gauche{
+    width: 30%;
+}
+
+#droite{
+    margin-left: 40%;
+    width: 60%;
+}
+
+#img-profil{
+    width: 150px;
+    margin-top: 10px
+}
+
+.td-photo-profil{
+    width: 5%;
+    text-align: center;
+}
+
+.td-info-profil{
+    width: 15%;
+}
+
+#div-setmdp{
+    padding: 50px;
+    padding-top: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 40%;
+    border-color: #DDD;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px, 4px, 4px, 4px;
+    border-width: 1px;
+    border-color: #DDD;
+    width: 40%;
+    border-style: solid;
+}
+
+#div-setmdp input{
+    width: 100%;
+}
+
+.title-setmdp{
+    font-style: italic;
+}
+
+.title-setmdp, #profil, #imgLogout{
+    float: right;
+}
+
+#logoSociety{
+    width: 50px;
+    margin-right: 20px;
+    margin-top: 1.2%;
+}
+
+#pointage-10h, #pointage-partiel, #pointage-complet, #jour-ferier-leg, .title-menu, .jour-ferier, .isNotEmpty:hover{
+    color: white;
+}
+
+.title-menu{
+    height: 50px;
+    padding: 15px;
+    padding-left: 0px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+#profil{
+    margin-top: 1.2%;
+    margin-right: 10px;
+}
+
+#imgLogout{
+    margin-left: 10px;
+}
+
+#imgUserEmpty, #imgLogout{
+    width: 25px;
+    margin-top: -5px;
+}
+
+.point-partiel, .point-sup-dix, .point-complet{
+    color: #fff;
+}
+
+.isNotEmpty, .point-partiel, .point-sup-dix, .point-complet{
+    cursor: pointer;
+}
+
+.isNotEmpty:hover, .point-sup-dix, #rect-container{
+    text-align: center;
+}
+
+.point-sup-dix{
+    background-color: mediumseagreen;
+}
+
+.point-sup-dix:hover{
+    background-color: #447D44;
+}
+
+.point-partiel{
+    background-color: #C9302C;
+}
+
+.point-partiel:hover{
+    background-color: #C9202C;
+}
+
+.point-complet{
+    background-color: cornflowerblue;
+}
+
+.point-complet:hover{
+    background-color: #338AB7;
+}
+
+.jour-actu{
+    color: blue;
+}
+
+.week-end{
+    background-color: #f1f1f1;
+    color:#a2a2a2;
+    cursor: auto;
+}
+
+.jour-ferier{
+    background-color: #F0AD4E;
+}
+
+.isNotEmpty:hover{
+    background-color: #C3C3C3;
+}
+
+.conges-planning-pris,
+.conges-planning-validate,
+.conges-planning-attente,
+.conges-planning-not-approved{
+    color:white;
+    cursor: pointer;
+}
+
+.conges-planning-pris, #conges-pris{
+    background-color: #666;
+}
+
+.conges-planning-validate,
+#conges-valides
+{
+    background-color: mediumseagreen;
+}
+
+.conges-planning-attente,
+.conges,
+#conges-en-attente{
+    background-color: #C9302C;
+}
+
+.conges-planning-not-approved,
+#conges-a-approuver{
+    background-color: #F0AD4E;
+}
+
+#conges-pris, #conges-a-approuver, #conges-en-attente, #conges-valides{
+    border-radius: 2px;
+}
+
+#conges-pris, #conges-a-approuver, #conges-en-attente, #conges-valides{
+    padding: 4px;
+}
+
+#conges-pris, #conges-a-approuver, #conges-en-attente, #conges-valides {
+    margin: 2px;
+}
+
+#conges-pris, #conges-a-approuver, #conges-en-attente, #conges-valides{
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+#conges-pris, #conges-a-approuver, #conges-en-attente, #conges-valides{
+    width: 250px;
+    font-size: 10pt;
+}
+
+#rect-conges{
+    z-index: 1;
+    background-color: #F7F2B2;
+}
+
+#rect-conges, #rect-center{
+    height: 6px;
+}
+
+#select-date, #conges-pris, #conges-a-approuver, #conges-en-attente, #conges-valides{
+    display: inline-block;
+}
+
+#rect-container{
+    width: 36px;
+    background-color: white;
+    position: relative;
+    margin: 0 auto;
+}
+
+#rect-container, #rect-fill{
+    height: 6px;
+}
+
+#rect-fill{
+    background-color: #783136;
+    position: absolute;
+}
+
+#legende-conges{
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 5px;
+}
+
+/**************************/
+/******* Container ********/
+/**************************/
+
+.container-footer{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.container-mdp-input{
+    width: 30%;
+}
+
+.maView, .container-tab-conges{
+    padding-bottom: 50px;
+}
+
+.container-mdp-input{
+    margin: 0 auto;
+}
+
+.container, .container-tab{
+    width: 100%;
+}
+
+.container > .navbar-header{
+    margin-left: 2%;
+    margin-right: 10%
+}
+
+/*/ Table de pointage /*/
+.container-tab{
+    float: right;
+    margin-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+.container-frais{
+    margin-top: 100px;
+}
+
+/**************************/
+/********* Texte **********/
+/**************************/
+#textarea{
+    resize: none;
+}
+
+#lbl_txt{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#rect-center{
+    width: 4px;
+    background-color: cornflowerblue;
+    z-index: 2;
+    margin-left: 16px;
+}
+
+#lbl-conges{
+    font-size: 9px;
+}
+
+#td-select{
+    width: 80%;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+#lbl_txt, #td-select{
+    margin-top: 5px;
+}
+
+.scroll-bar{
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#rect-center, .headCol{
+    position: absolute;
+}
+
+#msg-new-conge{
+    margin-left: 30%;
+     color: #C9302C;
+}
+
+.jaune{
+    color: #F0AD4E;
+}
+
+.week-conges, #dayWeek, .conges-week{
+    background-color: #D1D1D1;
+}
+
+.conges-week{
+    color: #D1D1D1;
+}
+
+#titleConges{
+    font-size: 14pt;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+#titleConges, #title-liste-conge, #labelSociety{
+    font-weight: bold;
+}
+
+#nameUser, #labelSociety{
+    color:black;
+}
+
+#tab-altern-two{
+  background-color:white;
+}
+
+#tab-altern-one{
+    background-color: #f9f9f9;
+}
+
+.caret, .navbar-inverse .navbar-nav > li > a, #nameUserProfil, #conges, #conges-pris, #conges-a-approuver, #conges-en-attente, #conges-valides,#conges-action{
+    color: white;
+}
+
+.mdp-green{
+    color: green;
+}
+
+.mdp-red{
+    color: red;
+}
+
+#coutLabel{
+    float: left;
+    width: 30%;
+    text-align: right;
+}
+
+#coutInput{
+    margin-right: 45%;
+    width: 20%;
+}
+
+#coutInput, .title-info, #coutInputCommentaire, .div-imprimer, #mdpInput, #logInfo{
+    float: right;
+}
+
+#coutInputCommentaire{
+    width: 100%;
+}
+
+#contenuPopupCout, #title-liste-conge, #titleConges, #caseConge, #conges-pris, #conges-a-approuver, #conges-en-attente, #conges-valides{
+    text-align: center;
+}
+
+#title-liste-conge, #coutInputCommentaire{
+    margin-bottom: 30px;
+}
+
+.title-info{
+    margin-right: 50px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#messageErreurMdp{
+    font-size: 16px;
+}
+
+/**************************/
+/********* Button *********/
+/**************************/
+
+#btn-print{
+    margin-right: 28.8%;
+    margin-top: 10px;
+}
+
+#btn-newDemande{
+    margin-top: 20px;
+    margin-right: 5px;
+    width: 150px;
+}
+
+#btn-newDemande, #btn-print, #btn-print-frais, #btn-nextMonth, #btn-next{
+    float: right;
+}
+
+#btn-previousMonth, #btn-previous{
+    float: left;
+}
+
+#btn-print-frais{
+    margin-top: 30px;
+    margin-right: 10%;
+}
+
+#btn-nextMonth, #btn-nextMonth a:hover, #btn-nextMonth:hover, #btn-previousMonth a:hover, #btn-previousMonth:hover, #btn-previousMonth{
+    color: black;
+}
+
+#btn-nextMonth{
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+#btn-nextMonth a:hover, #btn-nextMonth:hover, #btn-previousMonth a:hover, #btn-previousMonth:hover{
+    text-decoration: none;
+}
+
+#btn-previousMonth{
+    margin-left: 14%;
+}
+
+.btn-deconnexion{
+    cursor: pointer;
+    color: bisque;
+    margin-left: 5px;
+}
+
+textarea.form-control {
+    height: 200px;
+}
+
+.navbar{
+    margin-bottom: 0px;
+}
+
+.navbar-inverse{
+    background: teal;
+    border: 0px;
+}
+
+.container{
+    margin-top: 10px;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus {
+    background: cadetblue;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background: cadetblue;
+    box-shadow: inset 0 0 0;
+}
+
+#name-month{
+    color: indianred;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.container-tab table thead{
+    background-color: lavender;
+    color: black;
+    border: 1px solid #ddd;
+}
+
+#table-calendar th{
+    color: indianred;
+}
+
+.container-tab table tr th{
+    border: 1px solid #ddd;
+}
+
+.btn-indianred{
+    color: white;
+    background-color: indianred;
+}
+
+.btn-teal{
+    color: white;
+    background-color: teal;
+}
+
+.btn-indianred:hover, .btn-teal:hover{
+    color: white;
+}
+
+.saisie p{
+    color: red;
+}

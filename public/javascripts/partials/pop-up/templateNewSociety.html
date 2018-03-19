@@ -1,0 +1,46 @@
+<div id="popup">
+	<div>
+		<div class="modal-dialog">
+		    <div class="modal-content">
+		      	<div class="modal-header">
+		        	<!-- div id="btn-close-popup" class="ngdialog-close"></div> -->
+		        	<h4 class="modal-title">Ajouter un nouveau client</h4>
+		      	</div>
+		      	<div class="modal-body">
+		      		<div class="container-new-affaire" ng-style="{'background-color':'white'}"> 
+				      	<table class="table-new-client">
+				      		<tr>
+				      			<td>Nom : </td>
+				      			<td><input class="form-control" placeholder="Vide" ng-model="addClient.nomNewSociety"></input></td>
+				      		</tr>
+				      		<tr>
+				      			<td>Adresse : </td>
+				      			<td><input class="form-control" placeholder="Vide" ng-model="addClient.adresseNewSociety"></input></td>
+				      		</tr>
+				      		<tr>
+				      			<td>CP : </td>
+				      			<td><input class="form-control" placeholder="Vide" ng-model="addClient.CPNewSociety"></input></td>
+				      		</tr>
+				      		<tr>
+				      			<td>Ville : </td>
+				      			<td><input class="form-control" placeholder="Vide" ng-model="addClient.villeNewSociety"></input></td>
+				      		</tr>
+				      		<tr>
+				      			<td>Téléphone : </td>
+				      			<td><input class="form-control" placeholder="Vide" ng-model="addClient.telNewSociety"></input></td>
+				      		</tr>
+				      		<tr>
+				      			<td>FAX : </td>
+				      			<td><input class="form-control" placeholder="Vide" ng-model="addClient.faxNewSociety"></input></td>
+				      		</tr>
+				      	</table>
+			      	</div>
+		      	<div class="modal-footer">
+		        	<button ng-if="mode == 'add'" type="button" class="btn btn-indianred" ng-click="closeThisDialog('button'); enregistrerNewClient()" data-dismiss="modal">Enregistrer</button>
+		        	<button ng-if="mode == 'update'" type="button" class="btn btn-indianred" ng-click="closeThisDialog('button'); updateClient()" data-dismiss="modal">Modifier</button>
+		        	<button ng-click="closeThisDialog('button')" class="btn btn-default">Fermer</button>
+		      	</div>
+		    </div> 
+		</div>
+	</div>
+</div>

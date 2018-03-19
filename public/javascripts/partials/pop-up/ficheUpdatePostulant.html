@@ -1,0 +1,378 @@
+
+<div class="container-new-affaire" ng-style="{'min-width':'1400px', 'min-height':'950px'}">
+	<div class="div-margin-top"></div>
+	<div class="fiche-employe">
+
+        <form name="ficheUne" method="POST">
+            <tbody>
+                <table class="table-new-affaire">
+                    <tr>
+                        <tr><td><h2>Informations</h2></td></tr>
+                        <input class="form-control" type="hidden" ng-model="userInfos.code_p" placeholder="Vide"></input>
+                        <div ng-if="mode=admin">
+                            <td>Date entretien : </td>
+                            <td colspan="4"><input id="dateEntretien" type="text" class="date-picker form-control" datepicker="" ng-model="userInfos.dateEntretien" dp-format="yyyy/mm/dd"/>
+                            <label for="dateEntretien" class="input-group-addon btn"><span class="glyphicon glyphicon-calendar"></span></td>
+                            <tr><td>Vivier :</td><td><input ng-model="userInfos.vivier" type="checkbox" value=""/></td></tr>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td>Nom : </td><td colspan="6"><input class="form-control" type="text" ng-model="userInfos.nom"></input></td></tr>
+                        <tr><td>Prénom : </td><td colspan="6"><input type="text" class="form-control" ng-model="userInfos.prenom"></input></td></tr>
+                        <tr><td>Téléphone : </td><td colspan="6"><input type="text" class="form-control" ng-model="userInfos.tel1"></input></td></tr>
+                        <tr><td>Portable : </td><td colspan="6"><input type="text" class="form-control" ng-model="userInfos.tel2"></input></td></tr>
+                        <tr><td>Nationalité : </td><td colspan="6">
+                        <select class="form-control" ng-model="userInfos.nationalite">
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Afrique du Sud">Afrique du Sud</option>
+                            <option value="Albanie">Albanie</option>
+                            <option value="Algérie">Algérie</option>
+                            <option value="Allemagne">Allemagne</option>
+                            <option value="Andorre">Andorre</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Arabie Saoudite">Arabie Saoudite</option>
+                            <option value="Argentine">Argentine</option>
+                            <option value="Arménie">Arménie</option>
+                            <option value="Aruba">Aruba</option>
+                            <option value="Australie">Australie</option>
+                            <option value="Autriche">Autriche</option>
+                            <option value="Azerbaïdjan">Azerbaïdjan</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Bahreïn">Bahreïn</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Barbade">Barbade</option>
+                            <option value="Biélorussie / Bélarus">Biélorussie / Bélarus</option>
+                            <option value="Birmanie">Birmanie</option>
+                            <option value="Belgique">Belgique</option>
+                            <option value="Belize">Belize</option>
+                            <option value="Bénin">Bénin</option>
+                            <option value="Bermudes">Bermudes</option>
+                            <option value="Bhoutan">Bhoutan</option>
+                            <option value="Bolivie">Bolivie</option>
+                            <option value="Bosnie-Herzégovine">Bosnie-Herzégovine</option>
+                            <option value="Botswana">Botswana</option>
+                            <option value="Brésil">Brésil</option>
+                            <option value="Brunéi">Brunéi</option>
+                            <option value="Bulgarie">Bulgarie</option>
+                            <option value="Burkina Faso">Burkina Faso</option>
+                            <option value="Burundi">Burundi</option>
+                            <option value="Cameroun">Cameroun</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Cap-Vert">Cap-Vert</option>
+                            <option value="Rép. centrafricaine">Rép. centrafricaine</option>
+                            <option value="Chili">Chili</option>
+                            <option value="Chine">Chine</option>
+                            <option value="Chypre">Chypre</option>
+                            <option value="Colombie">Colombie</option>
+                            <option value="Comores">Comores</option>
+                            <option value="Rép. du Congo">Rép. du Congo</option>
+                            <option value="Rép. dém. du Congo">Rép. dém. du Congo</option>
+                            <option value="Corée du Nord">Corée du Nord</option>
+                            <option value="Corée du Sud">Corée du Sud</option>
+                            <option value="Costa Rica">Costa Rica</option>
+                            <option value="Côte d’Ivoire">Côte d’Ivoire</option>
+                            <option value="Croatie">Croatie</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Danemark">Danemark</option>
+                            <option value="Djibouti">Djibouti</option>
+                            <option value="Dominique">Dominique</option>
+                            <option value="Égypte">Égypte</option>
+                            <option value="Émirats arabes unis">Émirats arabes unis</option>
+                            <option value="Équateur">Équateur</option>
+                            <option value="Érythrée">Érythrée</option>
+                            <option value="Espagne">Espagne</option>
+                            <option value="Estonie">Estonie</option>
+                            <option value="États-Unis">États-Unis</option>
+                            <option value="Éthiopie">Éthiopie</option>
+                            <option value="Fidji">Fidji</option>
+                            <option value="Finlande">Finlande</option>
+                            <option value="France">France</option>
+                            <option value="Gabon">Gabon</option>
+                            <option value="Gambie">Gambie</option>
+                            <option value="Géorgie">Géorgie</option>
+                            <option value="Ghana">Ghana</option>
+                            <option value="Gibraltar">Gibraltar</option>
+                            <option value="Grèce">Grèce</option>
+                            <option value="Grenade">Grenade</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Guinée">Guinée</option>
+                            <option value="Guinée-Bissau">Guinée-Bissau</option>
+                            <option value="Guinée équatoriale">Guinée équatoriale</option>
+                            <option value="Guyana">Guyana</option>
+                            <option value="Haïti">Haïti</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Hongrie">Hongrie</option>
+                            <option value="Inde">Inde</option>
+                            <option value="Indonésie">Indonésie</option>
+                            <option value="Iran">Iran</option>
+                            <option value="Irak">Irak</option>
+                            <option value="Irlande">Irlande</option>
+                            <option value="Islande">Islande</option>
+                            <option value="Israël">Israël</option>
+                            <option value="Italie">Italie</option>
+                            <option value="Jamaïque">Jamaïque</option>
+                            <option value="Japon">Japon</option>
+                            <option value="Jordanie">Jordanie</option>
+                            <option value="Kazakhstan">Kazakhstan</option>
+                            <option value="Kenya">Kenya</option>
+                            <option value="Kirghizistan">Kirghizistan</option>
+                            <option value="Kiribati">Kiribati</option>
+                            <option value="Koweït">Koweït</option>
+                            <option value="Kosovo">Kosovo</option>
+                            <option value="Laos">Laos</option>
+                            <option value="Lesotho">Lesotho</option>
+                            <option value="Lettonie">Lettonie</option>
+                            <option value="Liban">Liban</option>
+                            <option value="Libéria">Libéria</option>
+                            <option value="Libye">Libye</option>
+                            <option value="Liechtenstein">Liechtenstein</option>
+                            <option value="Lituanie">Lituanie</option>
+                            <option value="Luxembourg">Luxembourg</option>
+                            <option value="Macédoine">Macédoine</option>
+                            <option value="Madagascar">Madagascar</option>
+                            <option value="Malaisie">Malaisie</option>
+                            <option value="Malawi">Malawi</option>
+                            <option value="Maldives">Maldives</option>
+                            <option value="Mali">Mali</option>
+                            <option value="Malte">Malte</option>
+                            <option value="Maroc">Maroc</option>
+                            <option value="Maurice">Maurice</option>
+                            <option value="Mauritanie">Mauritanie</option>
+                            <option value="Mexique">Mexique</option>
+                            <option value="Monaco">Monaco</option>
+                            <option value="Mongolie">Mongolie</option>
+                            <option value="Monténégro">Monténégro</option>
+                            <option value="Mozambique">Mozambique</option>
+                            <option value="Namibie">Namibie</option>
+                            <option value="Népal">Népal</option>
+                            <option value="Nicaragua">Nicaragua</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Nigéria">Nigéria</option>
+                            <option value="Norvège">Norvège</option>
+                            <option value="Nouvelle-Zélande">Nouvelle-Zélande</option>
+                            <option value="Oman">Oman</option>
+                            <option value="Ouganda">Ouganda</option>
+                            <option value="Ouzbékistan">Ouzbékistan</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Panama">Panama</option>
+                            <option value="Papouasie-Nouvelle-Guinée">Papouasie-Nouvelle-Guinée</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Pays-Bas">Pays-Bas</option>
+                            <option value="Pérou">Pérou</option>
+                            <option value="Philippines">Philippines</option>
+                            <option value="Pologne">Pologne</option>
+                            <option value="Porto Rico">Porto Rico</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Qatar">Qatar</option>
+                            <option value="République dominicaine">République dominicaine</option>
+                            <option value="République tchèque">République tchèque</option>
+                            <option value="Roumanie">Roumanie</option>
+                            <option value="Royaume-Uni">Royaume-Uni</option>
+                            <option value="Russie">Russie</option>
+                            <option value="Rwanda">Rwanda</option>
+                            <option value="St-Vincent-et-les-Grenadines">St-Vincent-et-les-Grenadines</option>
+                            <option value="Salvador">Salvador</option>
+                            <option value="Sénégal">Sénégal</option>
+                            <option value="Serbie">Serbie</option>
+                            <option value="Sierra Leone">Sierra Leone</option>
+                            <option value="Singapour">Singapour</option>
+                            <option value="Slovaquie">Slovaquie</option>
+                            <option value="Slovénie">Slovénie</option>
+                            <option value="Somalie">Somalie</option>
+                            <option value="Soudan">Soudan</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="Suède">Suède</option>
+                            <option value="Suisse">Suisse</option>
+                            <option value="Surinam">Surinam</option>
+                            <option value="Swaziland">Swaziland</option>
+                            <option value="Syrie">Syrie</option>
+                            <option value="Tadjikistan">Tadjikistan</option>
+                            <option value="Taïwan">Taïwan</option>
+                            <option value="Tanzanie">Tanzanie</option>
+                            <option value="Tchad">Tchad</option>
+                            <option value="Thaïlande">Thaïlande</option>
+                            <option value="Timor-Oriental">Timor-Oriental</option>
+                            <option value="Togo">Togo</option>
+                            <option value="Tunisie">Tunisie</option>
+                            <option value="Turkménistan">Turkménistan</option>
+                            <option value="Turquie">Turquie</option>
+                            <option value="Tuvalu">Tuvalu</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Vatican">Vatican</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="Vietnam">Vietnam</option>
+                            <option value="Yémen">Yémen</option>
+                            <option value="Zambie">Zambie</option>
+                            <option value="Zimbabwe">Zimbabwe</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>Ville : </td>
+                        <td colspan="6"><input type="text" class="form-control" ng-model="userInfos.ville"></input></td></tr>
+                        <tr><td>Adresse : </td>
+                        <td colspan="6"><input type="text" class="form-control" ng-model="userInfos.adresse"></input></td></tr>
+                        <tr><td>Code Postal : </td>
+                        <td colspan="6"><input type="text" class="form-control" ng-model="userInfos.codePostal"></input></td></tr>
+                        <tr><td>Mail : </td>
+                        <td colspan="6"><input type="text" class="form-control" ng-model="userInfos.email"></input></td></tr>
+                        <tr><td>Date de naissance : </td>
+                        <td colspan="6"><input id="naiss" type="text" class="date-picker form-control" datepicker="" ng-model="userInfos.naissDate" dp-format="yyyy/mm/dd"/>
+                        <label for="naiss" class="input-group-addon btn"><span class="glyphicon glyphicon-calendar"></span></td></tr>
+                        <tr><td>Lieu de naissance : </td>
+                        <td colspan="6"><input type="text" class="form-control" ng-model="userInfos.naissLieu"></input></td></tr>
+                    </tr>
+                    <tr>
+                        <tr><td>N° Sécurité sociale : </td>
+                        <td colspan="6"><input type="text" class="form-control" ng-model="userInfos.numSecu"></input></td></tr>
+                        <tr><td>Situation familiale : </td>
+                        <td colspan="6"><input type="text" class="form-control" ng-model="userInfos.situationMari"></input></td></tr>
+                        <tr><td>Nombre d'enfants : </td>
+                        <td colspan="6"><input type="text" class="form-control" ng-model="userInfos.nbEnfant"></input></td></tr>
+                        <tr><td>Année de naissance enfants : </td>
+                        <td colspan="6"><input type="text" class="form-control" ng-model="userInfos.naissEnfant"></input></td></tr>
+                        <tr><td>Profession du conjoint : </td>
+                        <td colspan="6"><input type="text" class="form-control" ng-model="userInfos.metierConj"></input></td></tr>
+                    </tr>
+
+                    <tr>
+                        <tr><td><h2>Dernier poste occupé</h2></td></tr>
+                        <tr><td>Fonction : </td>
+                        <td colspan="6"><input class="form-control" type="text" ng-model="userInfos.fonction"></input></td></tr>
+                        <tr><td>Societe : </td>
+                        <td colspan="6"><input class="form-control" type="text" ng-model="userInfos.societe"></input></td></tr>
+                        <tr><td>Dernière rémunération annuelle et avantages : </td>
+                        <td colspan="6"><input class="form-control" type="text" ng-model="userInfos.lastRemun"></input></td></tr>
+                    </tr>
+
+                    <tr>
+                        <tr><td><h2>Informations Complémentaires</h2></td></tr>
+                        <tr><td>Situation actuelle : </td>
+                        <td colspan="6"><input class="form-control" type="text" ng-model="userInfos.situationPro"></input></td></tr>
+                        <tr><td>Motivation de recherche d'emplois : </td>
+                        <td colspan="6"><input class="form-control" type="text" ng-model="userInfos.motiv"></input></td></tr>
+                        <tr><td>Poste recherché : </td>
+                        <td colspan="6"><input class="form-control" type="text" ng-model="userInfos.poste"></input></td></tr>
+                        <tr><td>Rémunération annuelle souhaitée : </td>
+                        <td colspan="6"><input class="form-control" type="text" ng-model="userInfos.remun"></input></td></tr>
+                        <tr><td>Négocation possible :</td>
+                        <td><input ng-model="userInfos.nego" type="checkbox" value=""/></td></tr>
+                        <tr><td>Disponibilité : </td>
+                        <td colspan="6"><input id="dispo" type="text" class="date-picker form-control" datepicker="" ng-model="userInfos.dispo" dp-format="yyyy/mm/dd"/>
+                        <label for="dispo" class="input-group-addon btn"><span class="glyphicon glyphicon-calendar"></span></td></tr>
+                        <tr><td>Clause de non-concurrence :</td>
+                        <td><input ng-model="userInfos.nonConcu" type="checkbox" value=""/></td></tr>
+                        <tr><td>Convention collective : </td>
+                        <td colspan="6"><input class="form-control" type="text" ng-model="userInfos.convColl"></input></td></tr>
+                    </tr>
+                    <tr>
+                        <td>Mobilité : </td>
+                        <td>Nord </td><td><input ng-model="userInfos.mobNor" type="checkbox" value=""/></td>
+                        <tr></tr><td></td><td>Est </td><td><input ng-model="userInfos.mobEst" type="checkbox" value=""/></td>
+                        <tr></tr><td><td>Rhône Alpes </td><td><input ng-model="userInfos.mobRa" type="checkbox" value=""/></td>
+                        <tr></tr><td><td>Sud </td><td><input ng-model="userInfos.mobSud" type="checkbox" value=""/></td>
+                        <tr></tr><td><td>Ile de France </td><td><input ng-model="userInfos.mobIdf" type="checkbox" value=""/></td>
+                        <tr></tr><td><td>Internationale </td><td><input ng-model="userInfos.mobInt" type="checkbox" value=""/></td>
+                        <tr></tr><td><td>Déménagement </td><td><input ng-model="userInfos.mobDemen" type="checkbox" value=""/></td>
+                        <tr></tr><td><td>Grand Déplacement </td><td><input ng-model="userInfos.mobGd" type="checkbox" value=""/></td>
+                        <tr></tr><td><td>Autre </td><td><input  class="form-control" type="text" ng-model="userInfos.mobLocal"></input></td>
+                    </tr>
+                    <tr>
+                        <td>Statut : </td>
+                        <td>ETAM </td><td><input ng-model="userInfos.etam" type="checkbox" value=""/></td>
+                        <tr></tr><td></td><td>Cadre </td><td><input ng-model="userInfos.cadre" type="checkbox" value=""/></td>
+                        <tr></tr><td></td><td>CDI </td><td><input ng-model="userInfos.cdi" type="checkbox" value=""/></td>
+                        <tr></tr><td></td><td>CDD / CDIC / Interim </td><td><input ng-model="userInfos.cdd" type="checkbox" value=""/></td>
+                    </tr>
+
+                    <!--COMPETENCES TECHNIQUES-->
+                    <tr>
+                        <tr><td>Techniques : </td></tr>
+
+                        <td><div>
+                            <button ng-click="addT()" class="btn btn-info">Ajouter...</button>
+                            <button ng-click="remT()" class="btn btn-info">X</button>
+                        </div></td>
+                        <td colspan="10">
+                            <div ng-repeat="formfield in formDataT.dynamicFields">
+                                <div>
+                                    <select ng-model="formfield.name" ng-options="T.code_c as T.intitule for T in listeT">
+                                    </select>
+                                    <input type="text" name="formfield.niveau" ng-model="formfield.niveau">
+                                    <input type="text" name="formfield.duree" ng-model="formfield.duree">
+                                </div>
+                            </div>
+                            <input type="button" value="test" ng-click="sendFormValues()"></input>
+                        </td>
+                    </tr>
+                    <!--SECTEURS-->
+                    <tr>
+                        <td>Secteurs : </td>
+                    </tr>
+                    <tr>
+                            <td><div>
+                                <button ng-click="addS()" class="btn btn-info">Ajouter...</button>
+                                <button ng-click="remS()" class="btn btn-info">X</button>
+                            </div></td>
+                            <td colspan="10">
+                                <div ng-repeat="formfield in formDataS.dynamicFields">
+                                        <div>
+                                            <select ng-model="formfield.name" ng-options="S.code_c as S.intitule for S in listeS">
+                                            </select>
+                                            <input type="text" name="formfield.duree" ng-model="formfield.duree">
+                                        </div>
+                                </div>
+                            </td>
+                    </tr>
+                    <!--LOGICIELS-->
+                    <tr>
+                        <td>Logiciels : </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <button ng-click="addI()" class="btn btn-info">Ajouter...</button>
+                                <button ng-click="remI()" class="btn btn-info">X</button>
+                            </div>
+                            <td colspan="10">
+                                <div ng-repeat="formfield in formDataI.dynamicFields">
+                                        <div>
+                                            <!--<input type="text" class="form-control" name="formfield.val" ng-model="formfield.val">-->
+                                            <select ng-model="formfield.name" ng-options="I.code_c as I.intitule for I in listeI">
+                                            </select>
+                                            <input type="text" name="formfield.niveau" ng-model="formfield.niveau">
+                                            <input type="text" name="formfield.duree" ng-model="formfield.duree">
+                                        </div>
+                                </div>
+                            </td>
+                        </td>
+                    </tr>
+                    <!--HABILITATIONS-->
+                    <tr>
+                        <td>Habilitations : </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <div>
+                            <button ng-click="addH()" class="btn btn-info">Ajouter...</button>
+                            <button ng-click="remH()" class="btn btn-info">X</button>
+                        </div>
+                        <td colspan="10">
+                            <div ng-repeat="formfield in formDataH.dynamicFields">
+                                    <div>
+                                        <!--<input type="text" class="form-control" name="formfield.val" ng-model="formfield.val">-->
+                                        <select ng-model="formfield.name" ng-options="H.code_c as H.intitule for H in listeH">
+                                        </select>
+                                        <input type="text" name="formfield.obtention" ng-model="formfield.obtention">
+                                        <input type="text" name="formfield.expire" ng-model="formfield.expire">
+                                    </div>
+                                    <input type="button" value="Valider" ng-click="updateUser()"></input>
+                            </div>
+                        </td>
+                    </td>
+                    </tr>
+                </table>
+            </tbody>
+        </form>
+	</div>
+</div>

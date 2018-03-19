@@ -1,0 +1,48 @@
+<div class="div-margin-top">
+
+</div>
+
+<div class="container-new-affaire" ng-style="{'min-width':'1400px', 'min-height':'950px'}"  ng-controller="ficheNewPostulantController">
+	<div class="div-margin-top"></div>
+	<div class="fiche-employe">
+
+			<div ng-style="{'width':'95%', 'margin':'0 auto', 'padding':'10px'}">
+				<div class="col-sm-12">
+					<div class="col-sm-4 col-perso">
+						<div>Nom : </div>
+						<div>Prénom : </div>
+						<div>Login : </div>
+						<div>Mot de passe : </div>
+					</div>
+					<div class="col-sm-8 col-perso">
+						<input class="form-control" ng-model="nom"/>
+						<input class="form-control" ng-model="prenom"/>
+						<input class="form-control" ng-model="log"/>
+						<input class="form-control" type="password" ng-model="mdp"/>
+						<select ng-style="{'width':'auto'}" ng-model="profil" class="form-control">
+							<option value="A">Administrateur</option>
+							<option value="U">Utilisateur</option>
+						</select>
+					</div><br />
+
+				</div>
+			</div>
+			<div class="col-sm-12" align="center">
+				<button class="btn btn-indianred" type="button" ng-click="newPostulant()">Ajouter</button>
+				<button class="btn btn-secondary" type="button" ng-click="retour()">Retour</button>
+			</div>
+			<br>
+			<div class="col-sm-12" align="center">
+				<div ng-if="msg.isGood == 'yes'" class="alert alert-success">
+				  	<strong>Succès!</strong> {{ msg.txt }}
+				</div>
+				<div ng-if="msg.isGood == 'no'" class="alert alert-danger">
+				  	<strong>Erreur!</strong> {{ msg.txt }}
+				</div>
+			</div>
+	</div>
+</div>
+
+<div class="div-margin-bot">
+
+</div>
