@@ -14,4 +14,11 @@ angular.module('maderiseApp')
       'AngularJS',
       'Karma'
     ];
-  });
+});
+angular.module('maderiseApp')
+    .controller('LoginCtrl',['$scope', function ($scope) {
+  $scope.yo = 'OKLM';
+
+
+
+}]);
